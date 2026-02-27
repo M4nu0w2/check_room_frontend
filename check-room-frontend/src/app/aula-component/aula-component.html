@@ -1,0 +1,21 @@
+
+
+@for (aula of aule; track aula.nome) {
+@if(aula.attiva){
+    <mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{aula.nome}}</mat-card-title>
+    <mat-card-subtitle>{{aula.edificio}} piano:{{aula.piano}}</mat-card-subtitle>
+  </mat-card-header>
+  
+  <mat-card-content>
+    {{aula.descrizione}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton (click)="openDialog(aula)">Prenota</button>
+  
+  </mat-card-actions>
+</mat-card>
+}
+}

@@ -1,8 +1,6 @@
-.example-cointainer{
-  
-  width: 200px;
+.example-card{
+     width: auto;
   height: 300px;
   border: 1px solid black;
   margin-bottom: 25px;
-
 }

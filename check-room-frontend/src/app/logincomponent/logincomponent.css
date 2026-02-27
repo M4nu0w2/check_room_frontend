@@ -1,0 +1,49 @@
+/* Reset base */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: #eef1f7;
+}
+
+/* Wrapper che centra tutto */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card login */
+form {
+  width: 100%;
+  max-width: 360px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input */
+.full-width {
+  width: 100%;
+}
+
+/* Bottone */
+button {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Hover leggero */
+button:hover {
+  transform: translateY(-1px);
+  transition: 0.2s ease;
+}

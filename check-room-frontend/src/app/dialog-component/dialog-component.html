@@ -1,0 +1,27 @@
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [(ngModel)]="date" [matDatepicker]="datePicker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="datePicker"></mat-datepicker-toggle>
+    <mat-datepicker #datePicker></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Pick start-time</mat-label>
+    <input matInput [(ngModel)]="startTime" [matTimepicker]="startPicker">
+    <mat-timepicker-toggle matIconSuffix [for]="startPicker"></mat-timepicker-toggle>
+    <mat-timepicker #startPicker></mat-timepicker>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Pick end-time</mat-label>
+    <input matInput [(ngModel)]="endTime" [matTimepicker]="endPicker">
+    <mat-timepicker-toggle matIconSuffix [for]="endPicker"></mat-timepicker-toggle>
+    <mat-timepicker #endPicker></mat-timepicker>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Note</mat-label>
+    <input matInput [(ngModel)]="note">
+</mat-form-field>
+<button matButton="elevated" (click)="creaPrenotazione()">Aggiungi</button>
